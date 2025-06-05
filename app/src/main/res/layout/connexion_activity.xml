@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="#1E7D1E"> <!-- Fond vert -->
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:contentDescription="Logo FSI"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fsi_logo"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Champ de texte Login -->
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login"
+        android:padding="16dp"
+        android:background="@drawable/neumorphic_white"
+        android:textColor="#1E7D1E"
+        android:textColorHint="#1E7D1E"
+        android:elevation="8dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Champ de texte Mot de passe avec icône œil -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/neumorphic_white"
+        android:padding="16dp"
+        android:elevation="8dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="#1E7D1E"
+            android:textColorHint="#1E7D1E"/>
+
+        <ImageButton
+            android:id="@+id/togglePassword"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:background="@drawable/neumorphic_white"
+            android:elevation="8dp"
+            android:contentDescription="Afficher/Masquer mot de passe"/>
+    </LinearLayout>
+
+
+
+    <!-- Bouton de connexion -->
+    <Button
+        android:id="@+id/btnConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@drawable/neumorphic_white"
+        android:textColor="#1E7D1E"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:backgroundTint="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FSI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Désactiver la couleur forcée des boutons -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/green</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/green</item>
+    </style>
+
+    <style name="Theme.FSI" parent="Base.Theme.FSI" />
+</resources>

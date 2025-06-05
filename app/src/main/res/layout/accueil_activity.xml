@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#1E7D1E"> <!-- Fond vert -->
+
+    <!-- Barre supérieure contenant le bouton de déconnexion -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnDeconnexion"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_lock_power_off"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="Déconnexion"
+            app:tint="@android:color/white"/>
+    </RelativeLayout>
+
+    <!-- Logo (placé en haut) -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:contentDescription="Logo FSI"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fsi_logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"/>
+
+    <!-- Message de bienvenue placé sous le logo -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur FSI Notes, [Nom Étudiant]"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <!-- Espacement flexible pour centrer les boutons au milieu -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Conteneur pour centrer les boutons au milieu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Bouton "Mes Informations" -->
+        <Button
+            android:id="@+id/btnMesInformations"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mes Informations"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="@drawable/neumorphic_white"
+            android:textColor="#1E7D1E"
+            android:elevation="10dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Bouton "Mes Notes" (même largeur que "Mes Informations") -->
+        <Button
+            android:id="@+id/btnMesNotes"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mes Notes"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="@drawable/neumorphic_white"
+            android:textColor="#1E7D1E"
+            android:elevation="10dp"/>
+    </LinearLayout>
+
+    <!-- Espacement flexible pour bien centrer les boutons au milieu -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
