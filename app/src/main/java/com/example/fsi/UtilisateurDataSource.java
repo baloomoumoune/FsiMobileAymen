@@ -38,6 +38,7 @@ public class UtilisateurDataSource {
         values.put("cpUti", utilisateur.getCpUti());
         values.put("nomEnt", utilisateur.getNomEnt());
         values.put("nomMaitapp", utilisateur.getNomMaitapp());
+        values.put("preMaitapp", utilisateur.getPreMaitapp());
         values.put("nomTut", utilisateur.getNomTut());
 
         db.insert("Utilisateur", null, values);

@@ -6,12 +6,12 @@ public class Utilisateur {
     private String motdepasse;
 
     private String nomUti, preUti, mailUti, telUti, adrUti, vilUti, cpUti;
-    private String nomEnt, nomMaitapp, nomTut;
+    private String nomEnt, nomMaitapp, preMaitapp, nomTut;
 
     public Utilisateur(int idUti, String login, String motdepasse,
                        String nomUti, String preUti, String mailUti, String telUti,
                        String adrUti, String vilUti, String cpUti,
-                       String nomEnt, String nomMaitapp, String nomTut) {
+                       String nomEnt, String nomMaitapp, String preMaitapp,String nomTut) {
         this.idUti = idUti;
         this.login = login;
         this.motdepasse = motdepasse;
@@ -25,6 +25,7 @@ public class Utilisateur {
         this.nomEnt = nomEnt;
         this.nomMaitapp = nomMaitapp;
         this.nomTut = nomTut;
+        this.preMaitapp = preMaitapp;
     }
 
     public int getIdUti() { return idUti; }
@@ -40,4 +41,7 @@ public class Utilisateur {
     public String getNomEnt() { return nomEnt; }
     public String getNomMaitapp() { return nomMaitapp; }
     public String getNomTut() { return nomTut; }
+    public String getPreMaitapp() {
+        return preMaitapp;
+    }
 }

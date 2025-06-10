@@ -55,8 +55,6 @@ public class ConnexionActivity extends AppCompatActivity {
             String login = editLogin.getText().toString();
             String mdp = editPassword.getText().toString();
 
-            Log.d("DEBUG_CONNEXION", "Tentative de login -> login=" + login + " | mdp=" + mdp);
-
             ApiService apiService = RetrofitClient.getInstance().create(ApiService.class);
             Call<ApiResponse> call = apiService.login("login", login, mdp);
 
@@ -101,7 +99,7 @@ public class ConnexionActivity extends AppCompatActivity {
                                                             Utilisateur utilisateur = new Utilisateur(idUti, login, mdp,
                                                                     info.nomUti, info.preUti, info.mailUti, info.telUti,
                                                                     info.adrUti, info.vilUti, info.cpUti,
-                                                                    ent.nomEnt, ent.nomMaitapp, tut.nomTut);
+                                                                    ent.nomEnt, ent.nomMaitapp, ent.preMaitapp, tut.nomTut);
 
                                                             UtilisateurDataSource dataSource = new UtilisateurDataSource(ConnexionActivity.this);
                                                             dataSource.open();

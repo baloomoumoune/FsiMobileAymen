@@ -19,7 +19,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
             COLUMN_MDP + " TEXT, " +
             "nomUti TEXT, preUti TEXT, mailUti TEXT, telUti TEXT, " +
             "adrUti TEXT, vilUti TEXT, cpUti TEXT, " +
-            "nomEnt TEXT, nomMaitapp TEXT, nomTut TEXT);";
+            "nomEnt TEXT, nomMaitapp TEXT, preMaitapp TEXT, nomTut TEXT);";
 
     // Table Bilan adaptée à toutes les colonnes nécessaires
     private static final String CREATE_BILAN = "CREATE TABLE Bilan (" +

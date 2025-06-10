@@ -132,6 +132,12 @@
             android:layout_height="wrap_content"
             android:text="Maître d'apprentissage : ..."
             android:textColor="#1E7D1E"/>
+
+        <TextView android:id="@+id/txtPreMaitreApprentissage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prénom maître d'apprentissage : ..."
+            android:textColor="#1E7D1E"/>
     </LinearLayout>
 
     <!-- Cadre École -->

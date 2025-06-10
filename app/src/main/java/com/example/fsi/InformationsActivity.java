@@ -13,7 +13,7 @@ public class InformationsActivity extends AppCompatActivity {
 
     private TextView txtNomEtudiant, txtPrenomEtudiant, txtEmailEtudiant, txtTelEtudiant,
             txtAdresseEtudiant, txtVilleEtudiant, txtCodePostalEtudiant,
-            txtNomEntreprise, txtMaitreApprentissage, txtNomEcole, txtTuteurEcole;
+            txtNomEntreprise, txtMaitreApprentissage, txtPreMaitreApprentissage, txtNomEcole, txtTuteurEcole;
 
     private ImageButton btnRetour;
 
@@ -35,6 +35,7 @@ public class InformationsActivity extends AppCompatActivity {
         txtCodePostalEtudiant = findViewById(R.id.txtCodePostalEtudiant);
         txtNomEntreprise = findViewById(R.id.txtNomEntreprise);
         txtMaitreApprentissage = findViewById(R.id.txtMaitreApprentissage);
+        txtPreMaitreApprentissage = findViewById(R.id.txtPreMaitreApprentissage);
         txtNomEcole = findViewById(R.id.txtNomEcole);
         txtTuteurEcole = findViewById(R.id.txtTuteurEcole);
 
@@ -62,6 +63,7 @@ public class InformationsActivity extends AppCompatActivity {
             txtCodePostalEtudiant.setText("Code Postal : " + cursor.getString(cursor.getColumnIndexOrThrow("cpUti")));
             txtNomEntreprise.setText("Nom de l'entreprise : " + cursor.getString(cursor.getColumnIndexOrThrow("nomEnt")));
             txtMaitreApprentissage.setText("Maître d'apprentissage : " + cursor.getString(cursor.getColumnIndexOrThrow("nomMaitapp")));
+            txtPreMaitreApprentissage.setText("Prenom maître d'apprentissage : " + cursor.getString(cursor.getColumnIndexOrThrow("preMaitapp")));
             txtNomEcole.setText("Nom de l'école : ORT");
             txtTuteurEcole.setText("Tuteur : " + cursor.getString(cursor.getColumnIndexOrThrow("nomTut")));
 
