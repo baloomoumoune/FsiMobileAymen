@@ -70,9 +70,9 @@ public class NotesActivity extends AppCompatActivity {
 
         if (!bilan1.isEmpty() && !bilan2.isEmpty()) {
             float moyenneG = (float) ((bilan1.get(0).getMoy() + bilan2.get(0).getMoy()) / 2.0);
-            txtMoyenneGenerale.setText("Moyenne : " + String.format("%.2f", moyenneG));
+            txtMoyenneGenerale.setText("Moyenne générale : " + String.format("%.2f", moyenneG));
         } else {
-            txtMoyenneGenerale.setText("Moyenne : N/A");
+            txtMoyenneGenerale.setText("Moyenne générale : N/A");
         }
 
         ds.close();

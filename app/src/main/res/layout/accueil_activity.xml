@@ -51,6 +51,19 @@
         android:gravity="center"
         android:layout_gravity="center" />
 
+    <TextView
+        android:id="@+id/txtMoyenneGeneraleAccueil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre moyenne générale est de ..."
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+
     <!-- Espacement flexible pour centrer les boutons au milieu -->
     <View
         android:layout_width="match_parent"
